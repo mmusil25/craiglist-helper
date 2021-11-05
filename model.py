@@ -2,7 +2,6 @@ import yake
 from transformers import pipeline
 from craigslist_scraper.scraper import scrape_url
 
-
 text_list = [
     "microsoft/DialoGPT-medium",
     "microsoft/DialoGPT-large",
@@ -36,13 +35,14 @@ def process_url(url, window):
     analyze_and_print(info, window)
 
     language = "en"
-    max_ngram_size = 1
+    max_ngram_size = 3
     deduplication_threshold = 0.9
     numOfKeywords = 10
     custom_kw_extractor = yake.KeywordExtractor(lan=language, n=max_ngram_size, dedupLim=deduplication_threshold,
                                                      top=numOfKeywords, features=None)
     keywords = custom_kw_extractor.extract_keywords(info)
-    window.write_event_value('-THREAD-', "\n Keywords from this post \n")
+    window.write_event_value('-THREAD-', "\n Keywords from this post.\n")
+
 
     for kw in keywords:
         window.write_event_value('-THREAD-', f"{kw[0]}")
