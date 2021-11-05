@@ -24,10 +24,16 @@ leave. Too bad it was such a great deal  :-1:
 
 ## Examples
 
-[A positive listing (scroll right)](media/_Positive.PNG)
+
+[A positive listing](media/_Positive.PNG)
+
+
 
 ## Usage 
 
+Install [python](https://www.python.org) 
+
+Open a command prompt
 
 Install dependencies via requirements.txt
 
