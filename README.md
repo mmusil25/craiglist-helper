@@ -17,6 +17,8 @@ I will be adding more features such as an email drafter to further automate the 
 
 Enjoy!
 
+Made with :sparkling_heart: by [Mark](https://www.markmusil.com)
+
 [^1]: I wore a mask to my meeting with the landlord and was immediately cussed out because of the mask and told to 
 leave. Too bad it was such a great deal :(
 
