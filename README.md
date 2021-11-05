@@ -31,7 +31,7 @@ leave. Too bad it was such a great deal  :-1:
 
 ## Usage 
 
-Install [python](https://www.python.org) 
+Install [python](https://www.python.org) and [clone this repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository)
 
 Open a command prompt
 
