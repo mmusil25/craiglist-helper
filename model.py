@@ -52,9 +52,9 @@ def process_url(url, window):
     #
     # listing_response = gpt2.generate(sess)
     language = "en"
-    max_ngram_size = 1
-    deduplication_threshold = 0.95
-    numOfKeywords = 5
+    max_ngram_size = 2
+    deduplication_threshold = 0.90
+    numOfKeywords = 3
     custom_kw_extractor = yake.KeywordExtractor(lan=language, n=max_ngram_size, dedupLim=deduplication_threshold,
                                                 top=numOfKeywords, features=None)
     keywords = custom_kw_extractor.extract_keywords(info)
@@ -64,7 +64,7 @@ def process_url(url, window):
     for kw in keywords:
         window.write_event_value('-THREAD-', f"{kw[0]}")
         keyword_string += (str(kw[0]) + " ")
-    window.write_event_value('-THREAD-', "\nGenerating Summary\n")
+    window.write_event_value('-THREAD-', "\nIn one sentence\n")
     # mygen = generator(keyword_string, length_penalty = 0.5, max_length=100, num_return_sequences=1)
 
     params = {"min_length": 50}  # decoding params
