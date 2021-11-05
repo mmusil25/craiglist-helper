@@ -28,6 +28,9 @@ leave. Too bad it was such a great deal  :-1:
 
 ## Usage 
 
+Install [python](https://www.python.org) 
+
+Open a command prompt
 
 Install dependencies via requirements.txt
 
