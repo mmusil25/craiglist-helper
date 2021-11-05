@@ -43,7 +43,7 @@ def the_gui():
     sg.theme('Light Brown 3')
 
     layout = [[sg.Text('Enter a URL to get a synopsis')],
-              [sg.Output(size=(80, 30))],
+              [sg.Output(size=(80, 40))],
               [sg.Text('Craigslist Url '),
                sg.Input(key='-CRAIGURL-', size=(50, 1)),
                sg.Button('Analyze listing', bind_return_key=True)],
