@@ -3,9 +3,9 @@ Perform sentiment analysis and keyword extraction on Craigslist listings
 
 # Background
 
-I love Craigslist. I've found most of my housing situations through craigslist and despite the occasional mix up with a 
+I love Craigslist. I've found most of my housing situations through Craigslist and despite the occasional mix up with a 
 stranger[^1] I always find better prices there and interesting individuals. However, I find it exhausting to browse Craigslist
-and parse the often poorly written or overly lengthy postings. I don't mind reading someone's well-thought-out
+and parse the sometimes poorly written or overly lengthy postings. I don't mind reading someone's well-thought-out
 description of their home and ideal roommate, but I do mind wasting time reading aggressive posts clearly written by 
 emotionally distant landlords. 
 
@@ -24,7 +24,7 @@ leave. Too bad it was such a great deal :(
 
 ## Examples
 
-[A positive listing](media/Positive.PNG)
+[A positive listing (scroll right)](media/Positive.PNG)
 
 ## Usage 
 
