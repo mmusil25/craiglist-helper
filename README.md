@@ -25,7 +25,7 @@ leave. Too bad it was such a great deal  :-1:
 ## Examples
 
 
-[A positive listing](media/_Positive.PNG)
+[A positive listing](media/_Positive.png)
 
 
 
