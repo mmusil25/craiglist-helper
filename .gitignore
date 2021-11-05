@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # Personal exclusions
-
 /.idea
 /questgen
 
