@@ -24,7 +24,9 @@ leave. Too bad it was such a great deal  :-1:
 
 ## Examples
 
-[A positive listing (scroll right)](media/Positive.PNG)
+A positive listing[^2]
+
+[^2]: Forthcoming, need to block out all PII. 
 
 ## Usage 
 
