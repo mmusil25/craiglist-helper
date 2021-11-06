@@ -20,8 +20,7 @@ n = ToastNotifier()
     This design pattern works for all of the flavors of PySimpleGUI including the Web and also repl.it
     You'll find a repl.it version here: https://repl.it/@PySimpleGUI/Async-With-Queue-Communicationspy
 """
-from model import process_url
-
+from model import process_url, analyze_and_print
 def long_operation_thread(seconds, window):
     """
     A worker thread that communicates with the GUI through a queue
@@ -47,6 +46,9 @@ def the_gui():
               [sg.Text('Craigslist Url '),
                sg.Input(key='-CRAIGURL-', size=(50, 1)),
                sg.Button('Analyze listing', bind_return_key=True)],
+              [sg.Text('Raw text '),
+               sg.Input(key='-TEXT-', size=(50, 1)),
+               sg.Button('Get sentiment', bind_return_key=False)],
               [sg.Button('Click Me to Make it Go Faster'), sg.Button('Exit')], ]
 
     window = sg.Window('Craigslist Helper', layout)
@@ -59,6 +61,9 @@ def the_gui():
         elif event.startswith('Analyze'):
             print('Processing listing...please wait.')
             threading.Thread(target=process_url, args=(values['-CRAIGURL-'], window), daemon=True).start()
+        elif event.startswith('Get sentiment'):
+            print('Processing text...please wait.')
+            threading.Thread(target=analyze_and_print, args=(values['-TEXT-'], window), daemon=True).start()
         elif event == 'Click Me to Make it Go Faster':
             threading.Thread(target=n.show_toast, args=("Patience", "is also a form of action."), kwargs={"duration": 20}, \
                                                                                                 daemon=True).start()
