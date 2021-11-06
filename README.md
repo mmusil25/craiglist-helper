@@ -46,3 +46,5 @@ Run!
 ```
 python3 controller.py
 ```
+<sub><sup> My intention is to provide a tool that can __help__ aid the common sense of the user. This informed my choice of the [Apache License](LICENSE). This tool is not a turn-key solution to online safety nor does it claim to be. This tool should not subsitute the use of Craigslist's safety toolkit.</sup></sub>
+
